@@ -3,8 +3,8 @@ body {
 }
 
 #banner {
-    height: 175px;
-    border-radius: 20px;
+    height: 190px;
+    border-radius: 25px;
     text-align: center;
     padding-top: 25px;
     /* For browsers that do not support gradients */
@@ -27,5 +27,5 @@ body {
 }
 
 .tie {
-    color: grey;
+    color: steelblue;
 }

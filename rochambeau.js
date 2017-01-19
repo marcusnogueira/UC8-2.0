@@ -91,6 +91,10 @@ function storePlayerChoice(choice) {
 
 function storeComputerChoice() {
     // Generate computer's random choice
+<<<<<<< HEAD
     computerChoice = Math.floor(Math.random() * 5);
+=======
+    computerChoice = Math.floor(Math.random() * 3);
+>>>>>>> UC8/master
     console.log("Computer choice = " + computerChoice);
 }

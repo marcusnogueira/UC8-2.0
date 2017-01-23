@@ -76,6 +76,11 @@ function displayScoreBoard(winsId, lossesId, tiesId) {
     document.getElementById(tiesId).innerHTML = score[1];
 }
 
+function displayMatchBoard(Mwin, Mloses) {
+    document.getElementById(winsId).innerHTML = score[0];
+    document.getElementById(lossesId).innerHTML = score[2];
+}
+
 function updateScore(val) {
     ++score[val];
     console.log("The score is now " + score);

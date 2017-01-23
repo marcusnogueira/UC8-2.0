@@ -18,8 +18,13 @@ function playGame() {
         console.log("win");
         return 1;
     }
-    else if (playerChoice == 2 && computerChoice == 4) {
-        // Scissors beats lizard - a win!
+    else if (playerChoice == 0 && computerChoice == 4) {
+        // Rock beats Lizard - a win!
+        console.log("win");
+        return 1;
+    }
+    else if (playerChoice == 1 && computerChoice == 1) {
+        // Paper beats Rock - a win!
         console.log("win");
         return 1;
     }
@@ -33,8 +38,8 @@ function playGame() {
         console.log("win");
         return 1;
     }
-    else if (playerChoice == 4 && computerChoice == 3) {
-        // Lizard beats Spock - a win!
+    else if (playerChoice == 2 && computerChoice == 4) {
+        // Scissors beats lizard - a win!
         console.log("win");
         return 1;
     }
@@ -48,13 +53,13 @@ function playGame() {
         console.log("win");
         return 1;
     }
-    else if (playerChoice == 4 && computerChoice == 1) {
-        // Lizard beats paper - a win!
+    else if (playerChoice == 4 && computerChoice == 3) {
+        // Lizard beats Spock - a win!
         console.log("win");
         return 1;
     }
-    else if (playerChoice == 0 && computerChoice == 4) {
-        // Rock beats Lizard - a win!
+    else if (playerChoice == 4 && computerChoice == 1) {
+        // Lizard beats paper - a win!
         console.log("win");
         return 1;
     }
@@ -62,11 +67,6 @@ function playGame() {
         // All other combinations are losses
         console.log("lose");
         return -1;
-    }
-    else if (playerChoice == 1 && computerChoice == 1) {
-        // Paper beats Rock - a win!
-        console.log("win");
-        return 1;
     }
 }
 

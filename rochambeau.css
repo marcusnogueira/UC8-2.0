@@ -29,3 +29,11 @@ body {
 .tie {
     color: steelblue;
 }
+
+.mwin {
+    color: lightpink
+}
+
+.mloses {
+    color: fuchsia
+}

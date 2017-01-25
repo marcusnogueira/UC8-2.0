@@ -1,57 +1,57 @@
-<<!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <title>Rochambeau2</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet " href="rochambeau.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="rochambeau.js"></script>
-    </head>
+<head>
+    <title>rochambeau2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet " href="rochambeau.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="rochambeau.js"></script>
+</head>
 
-    <body>
-        <p/>
-        <p/>
-        <div class="container">
-            <h1>Rock, Paper, Scissors Game</h1>
-            <p>Let's Play Rock, Paper Scissors! Press your choice and then press PLAY!.</p>
-            <div class="btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-default" onclick="storePlayerChoice(0)">Rock</button>
-                <button type="button" class="btn btn-default" onclick="storePlayerChoice(1)">Paper</button>
-                <button type="button" class="btn btn-default" onclick="storePlayerChoice(2)">Scissors</button>
-                <button type="button" class="btn btn-default" onclick="storePlayerChoice(3)">Spock</button>
-                <button type="button" class="btn btn-default" onclick="storePlayerChoice(4)">Lizard</button>
-            </div>
-            <p></p>
-            <input type="button" onclick="displayGameResult('result'), displayScoreBoard('wins', 'losses', 'ties')" value="Play" class="btn btn-primary">
-            <p></p>
-            <div id="result"></div>
-            <div id="scoreboard">
-                <table class="table">
-                    <tr>
-                        <td>Wins:</td>
-                        <td>Losses:</td>
-                        <td>Ties:</td>
-                    </tr>
-                    <tr>
-                        <td id="wins">0</td>
-                        <td id="losses">0</td>
-                        <td id="ties">0</td>
-                    </tr>
-                    <tr>
-                        <td>Match wins:</td>
-                        <td>Match loses:</td>
-                    </tr>
-                    <tr>
-                        <td id="Mwin">0</td>
-                        <td id="Mloses">0</td>
-                    </tr>
-                </table>
-            </div>
+<body>
+    <p/>
+    <p/>
+    <div class="container">
+        <h1>Rock, Paper, Scissors, Spock, Lizard Game</h1>
+        <p>Let's Play Rock, Paper Scissors, Spock, Lizard! Press your choice and then press PLAY!.</p>
+        <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default" onclick="storePlayerChoice(0)">Rock</button>
+            <button type="button" class="btn btn-default" onclick="storePlayerChoice(1)">Paper</button>
+            <button type="button" class="btn btn-default" onclick="storePlayerChoice(2)">Scissors</button>
+            <button type="button" class="btn btn-default" onclick="storePlayerChoice(3)">Spock</button>
+            <button type="button" class="btn btn-default" onclick="storePlayerChoice(4)">Lizard</button>
         </div>
-    </body>
+        <p></p>
+        <input type="button" onclick="displayGameResult('result'), displayScoreBoard('wins', 'losses', 'ties'), displayMatchResult(), displayMatchScore('pmatches', 'cmatches')" , value="Play" class="btn btn-primary">
+        <p></p>
+        <div id="result"></div>
+        <div id="scoreboard">
+            <table class="table">
+                <tr>
+                    <td>Wins:</td>
+                    <td>Losses:</td>
+                    <td>Ties:</td>
+                </tr>
+                <tr>
+                    <td id="wins">0</td>
+                    <td id="losses">0</td>
+                    <td id="ties">0</td>
+                </tr>
+                <tr>
+                    <td>Player Matches Won:</td>
+                    <td>Computer Matches Won:</td>
+                </tr>
+                <tr>
+                    <td id="pmatches">0</td>
+                    <td id="cmatches">0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
 
-    </html>
+</html>
